@@ -18,7 +18,7 @@ function Future() {
                 {/* Buttons */}
                 <div className="btns flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-20 mt-6 sm:mt-10 font-bold">
                     <div className="about-us">
-                        <Link href="/about">
+                        <Link href="/about" prefetch>
                             <button className="bg-[#d59f0f] text-white px-4 sm:px-6 py-1 rounded-full hover:bg-black border-2 hover:border-black border-[#d59f0f] transition-all duration-300 ease-in-out">
                                 ABOUT US
                             </button>
@@ -26,7 +26,7 @@ function Future() {
                         
                     </div>
                     <div className="apply">
-                        <Link href="/academics">
+                        <Link href="/academics" prefetch>
                             <button className="text-[#d59f0f] px-4 sm:px-6 py-1 rounded-full hover:bg-black hover:border-black border-2 border-[#d59f0f] transition-all duration-300 ease-in-out">
                                 EXPLORE ACADEMICS
                             </button>

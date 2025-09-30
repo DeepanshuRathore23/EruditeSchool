@@ -46,15 +46,15 @@ function Footer() {
                 {/* Quick Links Section */}
                 <div className="w-full lg:w-1/4 m-2 text-center lg:text-left">
                     <div className="line h-px bg-gray-500 mb-4"></div>
-                    <Link href="/about" className="hover:text-[#d59f0f] transition-colors duration-300 block my-2">About TEWS</Link>
+                    <Link href="/about" prefetch className="hover:text-[#d59f0f] transition-colors duration-300 block my-2">About TEWS</Link>
                     <div className="line h-px bg-gray-500 my-4"></div>
-                    <Link href="/admissions" className="hover:text-[#d59f0f] transition-colors duration-300 block my-2">Admissions</Link>
+                    <Link href="/admissions" prefetch className="hover:text-[#d59f0f] transition-colors duration-300 block my-2">Admissions</Link>
                     <div className="line h-px bg-gray-500 my-4"></div>
-                    <Link href="/academics" className="hover:text-[#d59f0f] transition-colors duration-300 block my-2">Academics</Link>
+                    <Link href="/academics" prefetch className="hover:text-[#d59f0f] transition-colors duration-300 block my-2">Academics</Link>
                     <div className="line h-px bg-gray-500 my-4"></div>
-                    <Link href="/studentLife" className="hover:text-[#d59f0f] transition-colors duration-300 block my-2">Student Life</Link>
+                    <Link href="/studentLife" prefetch className="hover:text-[#d59f0f] transition-colors duration-300 block my-2">Student Life</Link>
                     <div className="line h-px bg-gray-500 my-4"></div>
-                    <Link href="/athletics" className="hover:text-[#d59f0f] transition-colors duration-300 block my-2">Athletics</Link>
+                    <Link href="/athletics" prefetch className="hover:text-[#d59f0f] transition-colors duration-300 block my-2">Athletics</Link>
                     <div className="line h-px bg-gray-500"></div>
                 </div>
 

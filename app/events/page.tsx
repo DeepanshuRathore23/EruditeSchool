@@ -3,7 +3,6 @@
 import EventCard from "../ui/EventCard";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { fetchEvents } from "../lib/data";
 import type { Event } from "../lib/definitions";
 
 export default function Events() {
@@ -34,7 +33,7 @@ export default function Events() {
         </div>
 
         <div className="flex justify-end mb-6">
-          <Link href='/updateEvents'>
+          <Link href='/updateEvents' prefetch>
             <button className="p-3 bg-[#d59f0f] rounded-xl text-white">Manage Events</button>
           </Link>
         </div>

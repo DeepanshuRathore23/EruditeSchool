@@ -92,6 +92,7 @@ export default function Navbar() {
                     >
                         <Link
                             href="/"
+                            prefetch
                             className={clsx(
                                 `hover:text-[#d59f0f] transition-colors duration-300 `,
                                 {
@@ -103,6 +104,7 @@ export default function Navbar() {
 
                         <Link 
                             href="/about" 
+                            prefetch
                             className={clsx(
                                 `border-l border-[#d59f0f] pl-2 hover:text-[#d59f0f] transition-colors duration-300 `,
                                 {
@@ -114,6 +116,7 @@ export default function Navbar() {
 
                         <Link 
                             href="/admissions" 
+                            prefetch
                             className={clsx(
                                 `border-l border-[#d59f0f] pl-2 hover:text-[#d59f0f] transition-colors duration-300 `,
                                 {
@@ -125,6 +128,7 @@ export default function Navbar() {
 
                         <Link 
                             href="/academics" 
+                            prefetch
                             className={clsx(
                                 `border-l border-[#d59f0f] pl-2 hover:text-[#d59f0f] transition-colors duration-300 `,
                                 {
@@ -136,6 +140,7 @@ export default function Navbar() {
 
                         <Link 
                             href="/studentLife" 
+                            prefetch
                             className={clsx(
                                 `border-l border-[#d59f0f] pl-2 hover:text-[#d59f0f] transition-colors duration-300 `,
                                 {
@@ -147,12 +152,14 @@ export default function Navbar() {
 
                         <Link 
                             href="/athletics" 
+                            prefetch
                             className={`border-l border-[#d59f0f] pl-2 hover:text-[#d59f0f] transition-colors duration-300`}>
                                 Athletics
                         </Link>
 
                         <Link 
                             href="/contact" 
+                            prefetch
                             className={clsx(
                                 `border-l border-[#d59f0f] pl-2 hover:text-[#d59f0f] transition-colors duration-300 `,
                                 {
@@ -163,6 +170,7 @@ export default function Navbar() {
                         </Link>
                         <Link 
                             href="/events" 
+                            prefetch
                             className={clsx(
                                 `border-l border-[#d59f0f] pl-2 hover:text-[#d59f0f] transition-colors duration-300 `,
                                 {
@@ -174,11 +182,11 @@ export default function Navbar() {
                     </div>
 
                     <div className="right ml-auto">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8Lb-Z-6O820DpJcYjkP-bamxUL4wBVwmvHqBGvmhjIbUQsg/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd8Lb-Z-6O820DpJcYjkP-bamxUL4wBVwmvHqBGvmhjIbUQsg/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer" prefetch>
                             <button className="text-white px-4 py-2 rounded-3xl bg-[#d59f0f] hover:bg-black transition-all duration-300 eas-in-out">
                                 APPLY NOW
                             </button>
-                        </a>
+                        </Link>
                         
                     </div>
 
@@ -201,6 +209,7 @@ export default function Navbar() {
                         <nav className="flex flex-col space-y-5 mt-4 text-center text-lg font-semibold text-gray-800">
                         {Links.map((link) => (
                             <Link
+                            prefetch
                             key={link.href}
                             href={link.href}
                             onClick={() => setIsMenuOpen(false)}
@@ -222,7 +231,7 @@ export default function Navbar() {
                       WHERE WILL YOU VENTURE TO?
                   </div>
               
-                  <Link href='/academics' className="w-full sm:w-64 h-48 bg-white brightness-110 border border-gray-300 shadow-xl hover:border-[#d59f0f] transition-colors duration-300 mx-4 sm:mx-0 mt-4 sm:mt-0 mb-3">
+                  <Link href='/academics' prefetch className="w-full sm:w-64 h-48 bg-white brightness-110 border border-gray-300 shadow-xl hover:border-[#d59f0f] transition-colors duration-300 mx-4 sm:mx-0 mt-4 sm:mt-0 mb-3">
                       <div className="img flex justify-center">
                           <img src='/academics.png' alt="" className="h-20 w-20 mt-8" />
                       </div>
@@ -231,7 +240,7 @@ export default function Navbar() {
                       </div>
                   </Link>
               
-                  <Link href='/athletics' className="w-full sm:w-64 h-48 bg-white brightness-110 border border-gray-300 shadow-xl hover:border-[#d59f0f] transition-colors duration-300 mx-4 sm:mx-0 mt-4 sm:mt-0  mb-3">
+                  <Link href='/athletics' prefetch className="w-full sm:w-64 h-48 bg-white brightness-110 border border-gray-300 shadow-xl hover:border-[#d59f0f] transition-colors duration-300 mx-4 sm:mx-0 mt-4 sm:mt-0  mb-3">
                       <div className="img flex justify-center">
                           <img src='/atheletics.png' alt="" className="h-20 w-20 mt-8" />
                       </div>
@@ -240,7 +249,7 @@ export default function Navbar() {
                       </div>
                   </Link>
               
-                  <Link href='/extracurricular' className="w-full sm:w-64 h-48 bg-white brightness-110 border border-gray-300 shadow-xl hover:border-[#d59f0f] transition-colors duration-300 mx-4 sm:mx-0 mt-4 sm:mt-0 sm:mr-16 mb-3">
+                  <Link href='/extracurricular' prefetch className="w-full sm:w-64 h-48 bg-white brightness-110 border border-gray-300 shadow-xl hover:border-[#d59f0f] transition-colors duration-300 mx-4 sm:mx-0 mt-4 sm:mt-0 sm:mr-16 mb-3">
                       <div className="flex justify-center">
                           <img src='/extracurricular.png' alt="" className="h-20 w-20 mt-8" />
                       </div>

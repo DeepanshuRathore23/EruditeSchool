@@ -12,6 +12,8 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <title>Welcome to TEWS</title>
+      <link rel="icon" href="/school_logo.png" />
       <body className={`${inter.className} antialiased relative min-h-screen bg-white text-black`}>
         <WelcomeOverlay/>
         <Navbar />
