@@ -2,6 +2,7 @@ export default function Page(){
     return(
         <>
             <div className="main mt-[90vh] m-16">
+            /*some thing change for test purpose*/
                 <div className="about">
                     <div className="head font-bold flex justify-center text-5xl text-[#d59f0f]">
                         ABOUT US
