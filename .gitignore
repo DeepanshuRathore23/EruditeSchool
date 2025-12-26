@@ -3,6 +3,10 @@
 # placeholder file
 /app/lib/placeholder-data.ts
 
+
+# seeding file
+/app/seed
+
 # dependencies
 /node_modules
 /.pnp

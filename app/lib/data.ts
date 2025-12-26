@@ -20,7 +20,7 @@ export async function deleteEvent(id: string) {
   try{
     await sql`DELETE FROM events WHERE id = ${id}`;
   } catch(error) {
-    console.error("Error adding event: ", error);
+    console.error("Error deleting event: ", error);
   }
 }
 
@@ -51,7 +51,7 @@ export async function addEvent(formData: FormData) {
     }
 
   try{
-    await sql`INSERT INTO events(title, description, images, date)
+    await sql`INSERT INTO events(title, description, image, date)
       VALUES(${title}, ${description}, ${imageUrls} ,${date})
       ON CONFLICT (id) DO NOTHING`;
 
